@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Fund Me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="module" src="components.js"></script>
+</head>
+<body>
+    
+    <!-- Navbar -->
+   <my-navbar></my-navbar>
+
+    <!-- Showcase -->
+    <section class="p-5 text-center text-md-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+               <div class="p-3">
+                   <h1>Join the immutable 
+                       <span class="text-warning">crowdfunding community</span>
+                    </h1>
+                    <p class="lead my-4">Our goal is to help protect and support people who are marginalized and silenced in their own countries.</p>
+                    <a class="btn secondary-color text-light btn-lg" href="create.html">Create a Fund</a>
+               </div> 
+               <img class="img-fluid w-50 d-none d-md-block rounded-3" src="./images/crowdfund.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section class="p-5">
+        <div class="d-flex justify-content-center align-items-center">
+            <h3 class="mb-3 mb-md-0">How it Works</h3>
+        </div>
+    </section>
+
+    <!-- Boxes -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center gy-4">
+                <div class="col-md">
+                    <div class="card secondary-color text-light">
+                        <div class="h1 pt-2">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <h3 class="card-title mb-2">
+                            Mint
+                        </h3>
+                        <p class="card-text p-4">
+                            The picture and text of from your fund is stored on the blockchain as NFTs.
+                            This NFT is minted to your chain address. 
+                            <br/>
+                            <br/>
+                            That means only you own it and no one can censor you.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card secondary-color text-light">
+                        <div class="h1 pt-2">
+                            <i class="bi bi-currency-bitcoin"></i>
+                        </div>
+                        <h3 class="card-title mb-2">
+                            Donate
+                        </h3>
+                        <p class="card-text p-4">
+                            People can donate to your NFT through either through this website or any other way 
+                            they access the blockchain network. 
+                            <br/>
+                            <br/>
+                            That means no one can force us to stop people from donating to you.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card secondary-color text-light">
+                        <div class="h1 pt-2">
+                            <i class="bi bi-wallet2"></i>
+                        </div>
+                        <h3 class="card-title mb-2">
+                            Withdraw
+                        </h3>
+                        <p class="card-text p-4">
+                            You can withdraw your funds at any point to your address and can even transfer the fund
+                            to a different owner.
+                            <br/>
+                            <br/>
+                            That means no one can stop you from getting your funds when you need them.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Immutability Section -->
+    <section id="#create" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="./images/censored.png" alt="" class="img-fluid rounded-3">
+                </div>
+
+                <div class="col-md p-5">
+                    <h2 class="">Immutable</h2>
+                    <p class="lead">
+                        Anyone can create, donate and withdraw even if they cannot access this website.
+                        They can do it through a block explorer (etherscan.io) or connect directly with a script.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Tradeable Section -->
+    <section id="#learn" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+
+
+                <div class="col-md order-md-2">
+                    <img src="./images/transferable.jpg" alt="" class="img-fluid rounded-3">
+                </div>
+
+                <div class="col-md p-5 order-md-1">
+                    <h2>Transferable</h2>
+                    <p class="lead">
+                        You can transfer these funds from account to account and 
+                        only the account holder can withdraw funds but people can 
+                        still donate.
+                    </p>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="questions" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">
+                Frequently Asked Questions
+            </h2>
+
+            <div class="accordion" id="accordionExample">
+
+                <!-- Item 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Do you have control over the funds?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>The funds never touch our hands.</strong> The only person that can touch the funds are the holders of the NFT you donated to.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 2 -->                
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      What chains are you supported on?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>
+                          <a class="text-decoration-none" href='https://etherscan.io/address/0x9e3d737044ed14a63e0937167d9324f2feb863ad'>Ethereum, </a> 
+                          <a class="text-decoration-none" href='https://www.bscscan.com/address/0x9e3d737044ed14a63e0937167d9324f2feb863ad'>Binance Smart Chain, </a> 
+                          <a class="text-decoration-none" href='https://polygonscan.com/address/0x9e3d737044ed14a63e0937167d9324f2feb863ad'>Polygon, </a>
+                          <a class="text-decoration-none" href='https://ropsten.etherscan.io/address/0x9e3d737044ed14a63e0937167d9324f2feb863ad'>Ropsten. </a>
+                        </strong> 
+                        We want to roll out to every single chain. Play around with the example funds on the ropsten network.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      What happens if a fund reaches it end date?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Nothing, you can still donate and withdraw. </strong> The end date gives the donors information about when the money is needed.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Why the .eth.link url?
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This website is hosted on a decentralized server.</strong> That means we don't use the .coms or .nets as our goal is all about immutability and we want to spread the immutability of ENS addresses around.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="p-5 bg-dark text-white">
+        <div class="container">
+            <h4>Contact</h4>
+            <p>Email: cfundme@protonmail.com</p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+</html>

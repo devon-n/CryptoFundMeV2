@@ -1,0 +1,22 @@
+body::before {
+    display: block;
+    content: '';
+    height: 60px
+}
+
+.card { 
+    transition: 0.1s ease-in-out;
+    transition-duration: 0.1s
+}
+
+.primary-color {
+    background-color: #f8f9fa;
+}
+.secondary-color {
+    background-color: #023e8a;
+}
+
+a:hover {
+    font-weight: bold;
+    transition: 0.1s ease-in-out;
+}
